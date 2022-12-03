@@ -34,4 +34,4 @@ $version  = 2022112800.00;              // YYYYMMDD      = weekly release date o
                                         //           .XX = incremental changes.
 $release  = '4.2dev (Build: 20221128)'; // Human-friendly version name
 $branch   = '402';                     // This version's branch.
-$maturity = MATURITY_ALPHA;             // This version's maturity level.
+$maturity = MATURITY_ALPHA;             // This version's maturity level. trial
