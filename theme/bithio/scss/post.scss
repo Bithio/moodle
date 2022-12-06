@@ -1,0 +1,397 @@
+#page_content{
+    background-color:#ff008c;
+}
+.page-context-header{
+    color:#01abee;
+    //color: #800000;
+    
+}
+#yui_3_17_2_1_1660686497962_28{
+    color: #FF6F61;
+}
+h2{
+    color: #FF6F61;
+}
+//the code below is for the colabsible navigation toggle button on the header
+.navbar-light .navbar-toggler{
+    background: #01abee;}
+//the code below is for the collapsible toggle button for any course    
+    .drawer-toggles .drawer-left-toggle .btn {
+        background-color: #01abee;
+    }
+    //the code below is for the right side for navigation of course contents
+    .drawer-toggles .drawer-right-toggle .btn{background-color: #01abee;}
+//the code below is for the sign-in button 
+.sign-in {
+    margin:10px;
+    justify-content: center;
+    background-color:#0f6cbf;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+}
+.sign-in:hover  {
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+}
+.sign-in a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.sign-up {
+    border-radius: 10px;
+    background-color:#0f6cbf;
+    margin:10px;
+   justify-content: center;
+   border: none;
+   height: 30px;
+   width: 70px;
+   outline: none;
+}
+.sign-up:hover  {
+    background-color: #4CAF50;
+    transition-duration: 0.4s;
+}
+.sign-up a{
+    text-decoration: none;
+    color:#fff;
+}
+//the code below is for the header menu
+.navbar.fixed-top {
+    padding-top: 5px;
+    padding-bottom: 0;
+    box-shadow: none;
+    border-bottom: #dee2e6 1px solid;
+    align-items: stretch;
+    height: 80px;
+}
+
+//the code below is for the back-ground color of the  header menus
+.bg-white {
+    background-image: linear-gradient(90deg,#020024 0%, #090979 35%, #01abee 100%)!important;
+}
+//the code below for the header menus
+.primary-navigation .navigation .nav-link{color:#fff;font-size: bold;font-size: 20px;}
+//the code below is the the active link on the custum menu
+.navbar-light .navbar-nav .show>.nav-link, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: #FF4500;font-size: bold;font-size: large;
+}//the code below is for the font size of the brand logo/site short name. In other words short name of the site is now hidden as it is set to font-size=0;
+.navbar-light .navbar-brand{
+font-size: 0;
+}
+//this code is for the logo brand on the header menu
+.navbar-brand.d-none.d-md-flex.align-items-center.m-0.mr-4.p-0.aabtn{background-image:url([[pix:theme|favicon]]);background-repeat: no-repeat;background-size: cover;width: 105px;
+height: 75px;color:white;}
+//.login-container{background-image:url([[pix:theme|signupim]]);background-repeat: no-repeat; background-position: top;}
+//the two lines below are the first, to access the logo image from the pix folder under 'bithio' theme and the latter to apply color for the log in and sign-up forms.
+.login-container {background-image:url([[pix:theme|logoimage]]);background-repeat: no-repeat;background-size: cover;}
+.login-container{background-color: #01abee;}
+//body {background-image:url([[pix:theme|marketing1]]);background-repeat: no-repeat;background-size: cover;}
+
+//the code below is for hiding the profile fiels of city/town.
+#fitem_id_city{display: none;}
+// the code below is for hiding the profile field of country.
+#fitem_id_country{display: none;}
+// The codes below are for login display not to be seen in the login button.
+.login-instructions{display: none;}//hides for='For full access to this site, you first need to create an account.'
+.login-container{color: white;}//this color is for the heading texts in the log in and all texts in the sign-up form.
+.login-container h2.login-heading {display: none;}//hides for='Some courses may allow guest access'
+.login-divider{display: none;}//hides for 'the three lines below 'lost password''
+/*.btn-secondary {display: none;}//hides for buttons='Create new account, Log in as guest, Cokies notice'*/
+
+//the code below is commented b/c it disabled the next and previous buttons on a book
+//a.btn.btn-secondary {display: none;}//hides to the "create account button in the Log in button" on the front page.
+#guestlogin{display: none;}//hides to the "Log in as a guest button" on the front page of the log in.
+/*// the code below is deleted from "lib/templates/loginform.mustache" from 194 to 198
+<button type="button" class="btn btn-secondary" {{!
+}} data-modal="alert"{{!
+}} data-modal-title-str='["cookiesenabled", "core"]' {{!
+}} data-modal-content-str='["cookiesenabled_help_html", "core"]'{{!
+}}>{{#str}}cookiesnotice{{/str}}</button>*/
+
+//To hide the create account btn delete the code below in theme->bithio->templates->core->loginform.mustache(line 172)
+/*<div class="login-signup">
+            <a class="btn btn-secondary" href="{{signupurl}}">{{#str}}startsignup{{/str}}</a>
+        </div>*/
+.fdescription.required{display: none;}
+//All the codes below are fore the courseboxes
+.courses.frontpage-course-list-all{
+        
+
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    }
+    #frontpage-available-course-list .coursebox, #frontpage-course-list .coursebox, .course-search-result .coursebox {
+        @media (min-width: 576px){
+            //this is to show 3 courses per line.
+            margin: .5rem 0 0 .5rem;
+           // width: calc(25% - 0.5rem);
+            height: calc(25% - 0.5rem);
+        }}
+           
+// All the codes below are for the footer
+@media(min-width:576px){//this makes the footer to size this much when being narrowed.
+#page-wrapper #page-footer {
+   //this code id the best player fo the footer(the width and max-width are neccessary)
+    float:left;
+    height: auto;
+    width:109%;
+    margin-left:-5%;
+    margin-right:-5%;   
+    max-width: 109%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}}
+//the codes below are for the course navigation menu
+.secondary-navigation .navigation {
+    font-size: 1.4rem;}
+    .position-relative{font-size:1.3rem; }   
+
+    //the Boxes blew are names of classes written on the html_writer in the renderer of bithio theme for the footer.
+.Box{
+display: flex;
+justify-content:space-around;
+//justify-items: auto;
+}
+
+// this is the CSS for the footer file
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    }
+.Box1{
+    max-width:40px ;
+    margin: 10px;
+    //padding-right: 20px;
+}
+.Box2{
+    max-width:40px;
+    
+   // padding-right: 20px;
+}
+.Box3{
+    max-width:40px;
+    
+   // padding-right: 20px;
+}
+.Box4{
+    max-width:40px;
+    
+   // padding-right: 20px;
+}
+.bottom{
+    max-width: 109%;
+    margin-left:-5%;
+    margin-right:-5%;
+    border-bottom: 1px solid white;
+}
+#region-main-box {
+    padding-left: 0;
+    padding-right: 0;
+}
+.ccopy{
+    margin-right: 4px;
+    display: flex;
+justify-content:space-around;
+}
+
+//this is to hide for the horizontal scrollbar on the footer
+.drawers.drag-container{
+    overflow-x: hidden;
+    
+}
+
+.f1bh:hover{
+    transition:all .25s ease;
+    color:#01abee;
+}
+.f1 a:hover{
+    color:#01abee;
+    transition:all .25s ease;
+    text-decoration: none;
+}
+.f1:hover{
+    transition:all .25s ease;
+    color:#01abee;
+}
+
+#user-notifications{
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+h2{padding-left: 30px;}
+
+.frontblocksecond{
+   @media(min-width:400px){//this make the three marketing blocks to be small and resizable on the front page
+    display: flex;
+    margin-top: 0;
+    justify-content:space-around;
+    width: 100%;
+    height: auto;
+    //justify-items: auto;
+    //box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.1);
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    }}
+   
+    .gap3{
+       // background-color: #000;
+    }
+    .p1{//padding-left: 20px;
+        margin-right: 0;
+    //background-color: #01abee;
+    }
+    .p1_inner1{
+        background-color: #01abee;
+        color: #fff;
+    }
+    /*.thirdblock{
+        background-color: #01abee;
+        color: #fff;
+        max-height: 2002px;
+        justify-content: center;
+       // font-size: calc(1.044375rem + 1.7325vw);
+        font-family: sans-serif;
+        //backdrop-filter: blur(15px );
+    }*/
+    /*.frontblock2, .frontblock3, .frontblock4,*/.a1:hover{
+        //This code is for the front blocks on the site
+        transform: translateY(0);
+        transition:all .25s ease;
+        backdrop-filter: blur(5px );
+        transform: scale(1.15);
+        color: #ffffff;
+        background-color:#01abee;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.15);
+        border-width: 1px 0;
+        opacity: 1.5;
+        border-radius: 10px;
+    }
+    //the code below is for the links on the class a1
+    .a1 a{
+        text-decoration: none;
+        color:#fff;
+    }
+    .p1 i{
+        color: #FF4500;
+    }
+   // @media(min-width:484px){
+    .a1{
+        @media(min-width:400px){
+        //This code is for the front blocks on the site
+       background-color: #01abee;
+        opacity: 0.65;
+        transform: translateY(0px);
+        margin-left: 0;
+        justify-content: center;
+        background-color: #01abee;
+        justify-items: center;
+        color: #fff; 
+        margin-bottom: 15px;
+        transition: transform 0.25s
+    }}
+    .a1 h4 {
+        color: #FF4500;
+    }
+    //the code below is for the front page to have no padding by the right side
+   @media(min-width:484px){//this query makes responsive to "page" id and the class "drawers".
+    #page.drawers {
+        //padding-left: 0;
+       padding-right: 0;
+    }}
+   @media(min-width:576px){//this query makes the whole front page responsive.
+    #page-wrapper #page.drawers .main-inner {
+        //this code id the best player for the front page to be full page(the width and max-width are neccessary)
+         float:left;
+         height: auto;
+         width:109%;
+         margin-left:-6%;
+         margin-right:-5%;   
+         max-width: 109%;
+         flex-shrink: 0;
+         display: flex;
+       flex-direction: column;
+       margin-top: -5px;
+     }}
+     .list-unstyled {
+        //this code is for course report
+        padding-left: 30px;
+        list-style: none;
+    }
+    .form-inline {
+        //this code is for the question bank button 
+        padding-left: 40px;
+    }
+    #displayoptions{
+        padding-left: 40px;
+    }
+    .singlebutton {
+        //this code is for the create question button in the question bank
+        padding-left: 40px;
+    }
+    p{
+        //This code is for all paragraphs on the "accessibiligy toolkit" in a course->more->accessibility toolkit
+        padding-left: 20px;
+    }
+    .format-site .header-maxwidth{
+        max-width: none;
+        display: none;
+    }
+    h3,h5,h4{
+        //This code is for "All participants 0/0" on the grade report
+        padding-left: 20px;
+    }
+    .justify-content-md-start {
+        //This code is for the participants in the grade report
+        padding-left: 20px;
+    }
+    .path-grade-report-grader #region-main {
+        padding-left: 20px;
+    }
+    .block_myoverview .content {
+        //This is for the mycourses front view display
+        padding-left: 10px;
+    }
+
+    .blocks{
+        max-width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #FF6F61;
+        border: none;
+    }
+    .blocks:a{
+        text-decoration: none;
+    }
+    
+    @media (min-width: 840px){
+.dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+    width: calc(25% - 0.5rem);
+}}
+//the code below inclosed by "<style> is for the first block of the front page.
+//<style>
+@media(min-width:400px){
+    .marketingb1 img{
+     max-width: 100%;
+      height: auto;
+    }
+    }
+
+    @media (max-width: 767.98px){
+    #page-wrapper {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}}
