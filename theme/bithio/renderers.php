@@ -80,7 +80,7 @@ require_once($CFG->dirroot .'/theme/bithio/files/footer.html');
         $output .= html_writer::div('<h6><br>About Us</h6>','f1bh');
         $output .= html_writer::div('Bithio ICT Systems PLC','f1');
         $output .= html_writer::div('Addis Ababa, Ethiopia','f1');
-        $output .= html_writer::div('<a style="text-decoration: none;" href="http://localhost/moodle/my/courses.php">www.bithio.com</a>','f1');
+        $output .= html_writer::div('<a style="text-decoration: none;" href="https://elearning.bithio.com">www.bithio.com</a>','f1');
         $output .= html_writer::end_div('Box1');
 
         $output .= html_writer::start_div('style="padding-left:18px;"Box2');
@@ -240,11 +240,17 @@ class theme_bithio_core_course_renderer extends core_course_renderer{
         //$output .= html_writer::div('Bithio ICT Systems PLC<br><img src="theme/bithio/pix/courseimages/marketing1.png">','frontblock1');
         $output .= html_writer::span('<img src="theme/bithio/pix/pages/frontpage.png" alt="An image is lost.">','marketingb1');
        // $output .= html_writer::div('Addis Ababa, Ethiopia','f1');
-       // $output .= html_writer::div('<a style="text-decoration: none;" href="http://localhost/moodle/my/courses.php">www.bithio.com</a>','f1');
+       // $output .= html_writer::div('<a style="text-decoration: none;" href="https://elearning.bithio.com/">www.bithio.com</a>','f1');
         $output .= html_writer::end_div('frontblock1');
         $output .=html_writer::end_div('frontblock');
         $output.='<br><br>';//this line makes a gap between the blocks
 
+        $output .= html_writer::start_div('p1_txt');
+        $output .= html_writer::div('<h1><center>Children are natural learners.</center></h1> <center><p>However, in order for children to learn effectively, society needs to give them <br><b>good learning environment</b>.
+        That is what we do at Bithio.<br><br>
+        We provide children and youth with <b>interactive digital learning environment</b> that <br>they deserve to thrive in the digital age.</p></center>','p1');
+        $output .= html_writer::end_div('p1_txt');
+        $output.='<br><br>';//this line makes a gap between the blocks
         //The next blocks are for others
         $output .= html_writer::start_div('frontblocksecond');
         $output .= html_writer::start_div('style="padding-left:18px;"frontblock2</h6>');
@@ -272,7 +278,7 @@ class theme_bithio_core_course_renderer extends core_course_renderer{
        // $output .= html_writer::start_div('Box');
         $output .= html_writer::start_div('p1');
         $output .= html_writer::start_div('p1_inner1');
-        $output .= html_writer::div('<h1><center><br><br>Bringing your school to the digital world,<br> and your classroom to your pocket.<br><br><br></h1>','p1');
+        $output .= html_writer::div('<h1><center><br><br>Bringing your school to the digital world,<br> and your classroom to your pocket.<br><br><br></h1>','p2');
         
 
 

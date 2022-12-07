@@ -117,17 +117,38 @@ height: 75px;color:white;}
             <a class="btn btn-secondary" href="{{signupurl}}">{{#str}}startsignup{{/str}}</a>
         </div>*/
 .fdescription.required{display: none;}
+
+
+#frontpage-available-course-list, #frontpage-course-list, .course-search-result {
+    @media(min-width: 200px){
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    margin-top: 0.5rem;
+}}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    @media(min-width: 200px){
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }}
 //All the codes below are fore the courseboxes
 .courses.frontpage-course-list-all{
-        
-
+    @media (min-width: 200px){ 
     display: flex;
     flex-flow: row wrap;
     margin-right: 0rem;
     margin-left: 0rem;
-    }
+    justify-content: center;
+    }}
     #frontpage-available-course-list .coursebox, #frontpage-course-list .coursebox, .course-search-result .coursebox {
-        @media (min-width: 576px){
+        @media (min-width: 200px){
+            max-width: 100%;
             //this is to show 3 courses per line.
             margin: .5rem 0 0 .5rem;
            // width: calc(25% - 0.5rem);
@@ -135,8 +156,9 @@ height: 75px;color:white;}
         }}
            
 // All the codes below are for the footer
-@media(min-width:576px){//this makes the footer to size this much when being narrowed.
+@media(min-width:200px){//this makes the footer to size this much when being narrowed.
 #page-wrapper #page-footer {
+    @media(min-width:200px){//this makes the footer to size this much when being narrowed.
    //this code id the best player fo the footer(the width and max-width are neccessary)
     float:left;
     height: auto;
@@ -147,7 +169,7 @@ height: 75px;color:white;}
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-}}
+}}}
 //the codes below are for the course navigation menu
 .secondary-navigation .navigation {
     font-size: 1.4rem;}
@@ -155,10 +177,11 @@ height: 75px;color:white;}
 
     //the Boxes blew are names of classes written on the html_writer in the renderer of bithio theme for the footer.
 .Box{
+    @media(min-width: 200px){padding: .5rem;
 display: flex;
 justify-content:space-around;
 //justify-items: auto;
-}
+}}
 
 // this is the CSS for the footer file
 .container{
@@ -185,21 +208,23 @@ justify-content:space-around;
     
    // padding-right: 20px;
 }
-.bottom{
+.bottom{padding: .5rem;
+    @media(min-width: 200px){
     max-width: 109%;
     margin-left:-5%;
     margin-right:-5%;
     border-bottom: 1px solid white;
-}
+}}
 #region-main-box {
     padding-left: 0;
     padding-right: 0;
 }
-.ccopy{
+.ccopy{padding: .5rem;
+    @media(min-width: 200px){
     margin-right: 4px;
     display: flex;
 justify-content:space-around;
-}
+}}
 
 //this is to hide for the horizontal scrollbar on the footer
 .drawers.drag-container{
@@ -229,7 +254,7 @@ justify-content:space-around;
 h2{padding-left: 30px;}
 
 .frontblocksecond{
-   @media(min-width:400px){//this make the three marketing blocks to be small and resizable on the front page
+   @media(min-width:200px){//this make the three marketing blocks to be small and resizable on the front page
     display: flex;
     margin-top: 0;
     justify-content:space-around;
@@ -247,48 +272,38 @@ h2{padding-left: 30px;}
        // background-color: #000;
     }
     .p1{//padding-left: 20px;
+        @media(min-width:200px){
         margin-right: 0;
     //background-color: #01abee;
-    }
+    }}
     .p1_inner1{
+        @media(min-width:200px){
         background-color: #01abee;
         color: #fff;
-    }
-    /*.thirdblock{
-        background-color: #01abee;
-        color: #fff;
-        max-height: 2002px;
-        justify-content: center;
-       // font-size: calc(1.044375rem + 1.7325vw);
-        font-family: sans-serif;
-        //backdrop-filter: blur(15px );
-    }*/
-    /*.frontblock2, .frontblock3, .frontblock4,*/.a1:hover{
-        //This code is for the front blocks on the site
+    }}
+.a1:hover{
+    @media(min-width:200px){   //This code is for the front blocks on the site
         transform: translateY(0);
         transition:all .25s ease;
         backdrop-filter: blur(5px );
-        transform: scale(1.15);
+        transform: scale(1.05);
         color: #ffffff;
         background-color:#01abee;
         box-shadow: 2px 2px 2px 2px rgb(0, 0, 0,0.15);
         border-width: 1px 0;
         opacity: 1.5;
         border-radius: 10px;
-    }
+    }}
     //the code below is for the links on the class a1
     .a1 a{
         text-decoration: none;
         color:#fff;
     }
-    .p1 i{
-        color: #FF4500;
-    }
    // @media(min-width:484px){
     .a1{
-        @media(min-width:400px){
+        @media(min-width:200px){
         //This code is for the front blocks on the site
-       background-color: #01abee;
+      background-color: #01abee;
         opacity: 0.65;
         transform: translateY(0px);
         margin-left: 0;
@@ -303,12 +318,12 @@ h2{padding-left: 30px;}
         color: #FF4500;
     }
     //the code below is for the front page to have no padding by the right side
-   @media(min-width:484px){//this query makes responsive to "page" id and the class "drawers".
+   @media(min-width:200px){//this query makes responsive to "page" id and the class "drawers".
     #page.drawers {
         //padding-left: 0;
        padding-right: 0;
     }}
-   @media(min-width:576px){//this query makes the whole front page responsive.
+   @media(min-width:200px){//this query makes the whole front page responsive.
     #page-wrapper #page.drawers .main-inner {
         //this code id the best player for the front page to be full page(the width and max-width are neccessary)
          float:left;
@@ -342,10 +357,32 @@ h2{padding-left: 30px;}
         //This code is for all paragraphs on the "accessibiligy toolkit" in a course->more->accessibility toolkit
         padding-left: 20px;
     }
+    body { 
+        @media (min-width: 200px){
+        
+            font-size: calc(0.90375rem + 0.045vw);
+        }}
+   @media (min-width: 200px){
+body {
+    font-size: calc(0.90375rem + 0.045vw);
+}}
+    .p1 h1{
+        color:#01abee;
+    }
+    .p1 b{
+        color: #FF4500;
+    }
+    .p1 p{
+        font-size:20px;
+    }
     .format-site .header-maxwidth{
         max-width: none;
         display: none;
     }
+    .p2 h1{
+        @media (min-width: 200px){
+        color: #ffffff;
+    }}
     h3,h5,h4{
         //This code is for "All participants 0/0" on the grade report
         padding-left: 20px;
@@ -374,13 +411,13 @@ h2{padding-left: 30px;}
         text-decoration: none;
     }
     
-    @media (min-width: 840px){
+    @media (min-width: 200px){
 .dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
     width: calc(25% - 0.5rem);
 }}
 //the code below inclosed by "<style> is for the first block of the front page.
 //<style>
-@media(min-width:400px){
+@media(min-width:200px){
     .marketingb1 img{
      max-width: 100%;
       height: auto;
@@ -388,6 +425,14 @@ h2{padding-left: 30px;}
     }
 
     @media (max-width: 767.98px){
+    #page-wrapper {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}}
+@media (min-width: 200px){
     #page-wrapper {
     height: 100%;
     max-width: 100%;
