@@ -129,14 +129,14 @@ height: 75px;color:white;}
     margin-top: 0.5rem;
 }}
 
-.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+/*.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
     @media(min-width: 200px){
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-  }}
+  }}*/
 //All the codes below are fore the courseboxes
 .courses.frontpage-course-list-all{
     @media (min-width: 200px){ 
@@ -176,13 +176,106 @@ height: 75px;color:white;}
     .position-relative{font-size:1.3rem; }   
 
     //the Boxes blew are names of classes written on the html_writer in the renderer of bithio theme for the footer.
-.Box{
-    @media(min-width: 200px){padding: .5rem;
+.ccopy,.Box{
+@media(min-width: 200px){
+    //padding: .5rem;
+    padding-top: 0em;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
 display: flex;
 justify-content:space-around;
 //justify-items: auto;
+display: flex;
+flex-flow: row wrap;
+flex-direction: row;
+flex-wrap: wrap;
+//margin-right: 0rem;
+//margin-left: 0rem;
+//justify-content: center;
 }}
-
+@media (min-width: 200px){
+.p1_inner1 {
+    padding-top: 0em;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: #01abee;
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    //justify-items: auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -5%;
+    margin-left: -5%;
+}}  
+@media(min-width: 200px){
+    .frontblocksecond{
+    display: flex;
+    justify-content:space-around;
+    //justify-items: auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -5%;
+    margin-left: -5%;
+    }}
+    @media(min-width: 200px){
+        .p1_txt{
+            padding-top: 0em;
+            padding-right: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;    
+        display: flex;
+        justify-content:space-around;
+        //justify-items: auto;
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: -5%;
+        margin-left: -5%;
+        }}
+       /* @media(min-width: 200px){
+        .p1_inner1{
+        background-color: #01abee;
+        color: #fff;
+        display: flex;
+        margin-left:auto;
+        margin:auto;
+        //justify-content:space-around;
+        //justify-items: auto;
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+       // margin-right: -5%;
+       // margin-left: -5%;
+        }}*/
+        @media(min-width: 200px){
+            .frontblock{
+            display: flex;
+            justify-content:space-around;
+            //justify-items: auto;
+            display: flex;
+            flex-flow: row wrap;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: -5%;
+            margin-left: -5%;
+            }}
+.p1_txt p{
+justify-content: space-around;
+//padding: 1rem;
+}
+.p1_inner1 h1{
+    justify-content: space-around;
+    //padding: 1rem;
+    }
 // this is the CSS for the footer file
 .container{
     display:flex;
@@ -246,14 +339,14 @@ justify-content:space-around;
     color:#01abee;
 }
 
-#user-notifications{
+/*#user-notifications{
     padding-left: 20px;
     padding-right: 40px;
-}
+}*/
 
 h2{padding-left: 30px;}
 
-.frontblocksecond{
+/*.frontblocksecond{
    @media(min-width:200px){//this make the three marketing blocks to be small and resizable on the front page
     display: flex;
     margin-top: 0;
@@ -266,21 +359,22 @@ h2{padding-left: 30px;}
     flex-flow: row wrap;
     margin-right: 0rem;
     margin-left: 0rem;
-    }}
+    }}*/
    
     .gap3{
        // background-color: #000;
     }
-    .p1{//padding-left: 20px;
+    /*.p1{//padding-left: 20px;
         @media(min-width:200px){
         margin-right: 0;
     //background-color: #01abee;
-    }}
-    .p1_inner1{
-        @media(min-width:200px){
+    }}*/
+ /*   @media(min-width:200px){
+        .p1_inner1{
+        
         background-color: #01abee;
         color: #fff;
-    }}
+    }}*/
 .a1:hover{
     @media(min-width:200px){   //This code is for the front blocks on the site
         transform: translateY(0);
@@ -312,6 +406,7 @@ h2{padding-left: 30px;}
         justify-items: center;
         color: #fff; 
         margin-bottom: 15px;
+        border-radius: 10px;
         transition: transform 0.25s
     }}
     .a1 h4 {
@@ -329,14 +424,15 @@ h2{padding-left: 30px;}
          float:left;
          height: auto;
          width:109%;
-         margin-left:-6%;
+         margin-left:-5%;
          margin-right:-5%;   
          max-width: 109%;
          flex-shrink: 0;
          display: flex;
        flex-direction: column;
        margin-top: -5px;
-     }}
+     }}                 
+
      .list-unstyled {
         //this code is for course report
         padding-left: 30px;
@@ -392,7 +488,7 @@ body {
         padding-left: 20px;
     }
     .path-grade-report-grader #region-main {
-        padding-left: 20px;
+        padding-left: 0;
     }
     .block_myoverview .content {
         //This is for the mycourses front view display
@@ -439,4 +535,55 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 0;
+}}
+@media(min-width:200px){
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}}
+@media(min-width:200px){
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:auto;
+}}
+@media (min-width: 200px){// this code makes the contents of the frontpage on the settings menu fit while minimized.
+#page.drawers div[role="main"] {
+    @media (min-width: 200px){
+    padding-left: 23px;
+    padding-right: 15px;
+    //margin: .5rem;
+}}}
+
+@media (min-width: 200px){// this code makes the contents of the frontpage(texts and images) fit while minmized or on mobilephone.
+#page-wrapper #page #page-content {
+    flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}}
+.row {//this code makes the rows of the frontpage fit.
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-left: 0;
+}
+#region-main-box {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media(min-width: 200px){
+#participantsform .no-overflow {
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
+    display: flex;
+    //flex: 1 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
 }}

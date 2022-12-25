@@ -85,23 +85,23 @@ require_once($CFG->dirroot .'/theme/bithio/files/footer.html');
 
         $output .= html_writer::start_div('style="padding-left:18px;"Box2');
         $output .= html_writer::div('<h6><br>Products And Services</h6>','f1bh');
-        $output .= html_writer::div('eLearning systems','f1');
-        $output .= html_writer::div('Products and Services','f1');
-        $output .= html_writer::div('Digital library','f1');
+        $output .= html_writer::div('eLearning Systems','f1');
+        $output .= html_writer::div('Teacher Training','f1');
+        $output .= html_writer::div('Digital Skills Training','f1');
         $output .= html_writer::end_div('Box2');
 
         $output .= html_writer::start_div('style="padding-right:28px;"Box3');
         $output .= html_writer::div('<h6><br>Contact Us</h6>','f1bh');
         $output .= html_writer::div('Ethio ICT Park','f1');
         $output .= html_writer::div('Bole Sub City, Woreda 11','f1');
-        $output .= html_writer::div('<a style="text-decoration: none;" href="#">Email: info@bithio.com</a>','f1');
+        $output .= html_writer::div('Email: info@bithio.com','f1');
         $output .= html_writer::end_div('Box3');
 
         $output .= html_writer::start_div('style="padding-right:28px;"Box4');
         $output .= html_writer::div('<h6><br>Follow Us</h6>','f1bh');
-        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="#" class="fa fa-facebook"></a></h6>','f1');
-        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="#" class="fa fa-twitter"></a></h6>','f1');
-        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="#" class="fa fa-instagram"></a></h6>','f1');
+        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="https://www.facebook.com/BithioLearning" class="fa fa-facebook"></a></h6>','f1');
+        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="https://twitter.com/BithioL" class="fa fa-twitter"></a></h6>','f1');
+        $output .= html_writer::div('<h6><a style="text-decoration:none;" href="https://linkedin.com/company/bithio" class="fa fa-linkedin"></a></h6>','f1');
         $output .= html_writer::div('<br>');
         // $output .= html_writer::div('<strong><h5><a style="text-decoration:none;" href="#" class="fa fa-telegram"></a><h5></strong>');
         $output .= html_writer::end_div('Box4');
@@ -110,8 +110,8 @@ require_once($CFG->dirroot .'/theme/bithio/files/footer.html');
         $output .= html_writer::start_div('bottom');
         $output .= html_writer::end_div('bottom');
         $output .= html_writer::start_div('ccopy');
-        $output .= html_writer::div( '<br>©2021 Bithio ICT Systems. All Rights Reserved','f1');
-        $output .= html_writer::div('<br><a style="text-decoration: none;" href="https://www.bithio.com/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Fwww.bithio.com%2F">policies</a>','f1');
+        $output .= html_writer::div( '<br>©2022 Bithio ICT Systems. All Rights Reserved','f1');
+        //$output .= html_writer::div('<br><a style="text-decoration: none;" href="https://www.bithio.com/admin/tool/policy/viewall.php?returnurl=https%3A%2F%2Fwww.bithio.com%2F">policies</a>','f1');
        // html_writer::div(include($CFG->dirroot .'/theme/bithio/files/footer.html'));
         //include($CFG->dirroot .'/theme/bithio/files/footer.html');
         $output .= html_writer::end_div('<br>ccopy');
@@ -234,65 +234,60 @@ class theme_bithio_core_course_renderer extends core_course_renderer{
             $output .= $renderer->render($frontpagesection);
         }
         //the code below is an image for the front page in the first block
+      // $output .= html_writer::start_div('frontcovercontainer');
         $output .= html_writer::start_div('frontblock');
-        $output .= html_writer::start_div('style="padding-left:1px;"frontblock1</h6>');
+        $output .= html_writer::start_div('style="padding-left:1px;"frontblock1');
        // $output .= html_writer::div('<h6><br>About Us</h6>');
         //$output .= html_writer::div('Bithio ICT Systems PLC<br><img src="theme/bithio/pix/courseimages/marketing1.png">','frontblock1');
-        $output .= html_writer::span('<img src="theme/bithio/pix/pages/frontpage.png" alt="An image is lost.">','marketingb1');
+        $output .= html_writer::div('<img src="theme/bithio/pix/pages/frontpage.png" alt="An image is lost.">','marketingb1');
        // $output .= html_writer::div('Addis Ababa, Ethiopia','f1');
        // $output .= html_writer::div('<a style="text-decoration: none;" href="https://elearning.bithio.com/">www.bithio.com</a>','f1');
         $output .= html_writer::end_div('frontblock1');
         $output .=html_writer::end_div('frontblock');
-        $output.='<br><br>';//this line makes a gap between the blocks
+        //$output .=html_writer::end_div('frontblock');
+        $output.='<br><br><br>';//this line makes a gap between the blocks
 
         $output .= html_writer::start_div('p1_txt');
         $output .= html_writer::div('<h1><center>Children are natural learners.</center></h1> <center><p>However, in order for children to learn effectively, society needs to give them <br><b>good learning environment</b>.
         That is what we do at Bithio.<br><br>
         We provide children and youth with <b>interactive digital learning environment</b> that <br>they deserve to thrive in the digital age.</p></center>','p1');
         $output .= html_writer::end_div('p1_txt');
-        $output.='<br><br>';//this line makes a gap between the blocks
+        $output.='<br><br><br>';//this line makes a gap between the blocks
         //The next blocks are for others
         $output .= html_writer::start_div('frontblocksecond');
-        $output .= html_writer::start_div('style="padding-left:18px;"frontblock2</h6>');
+        $output .= html_writer::start_div('frontblock2</h6>');
         //$output .= html_writer::div('<h6><center><br>About Us</h6>','a1');
         $output .= html_writer::div('<h4><center><br>Are you a school?</h4><img src="theme/bithio/pix/pages/school.png"><center>Save cost of paperwork and improve your student <br>learning outcome through the power of technology<br><br>','a1');
         //$output .= html_writer::div('<h4><center><br>Are you a school?</h4><img src="theme/bithio/pix/courseimages/block1.png"><button class="blocks"><a href="http://localhost/moodle/login/signup.php">click-here<br></a></button><br><br><center>Save cost of paperwork and improve your student <br>learning outcome through the power of technology<br><br>','a1');
         $output .= html_writer::end_div('frontblock2');
-        $output.='<br><br>';//this line makes a gap between the blocks
+       // $output.='<br><br>';//this line makes a gap between the blocks
         
-        $output .= html_writer::start_div('style="padding-left:18px;"frontblock3');
+        $output .= html_writer::start_div('frontblock3');
        // $output .= html_writer::div('<h6><center><br>Products And Services</h6>','a1');
         $output .= html_writer::div('<h4><center><br>Are you a teacher?</h4><img src="theme/bithio/pix/pages/teacher.png"><center>Get trained on educational technologies and<br> engage your students better.<br><br>','a1');
         $output .= html_writer::end_div('frontblock3');
-        $output.='<br><br>';//this line makes a gap between the blocks
+       // $output.='<br><br>';//this line makes a gap between the blocks
 
-        $output .= html_writer::start_div('style="padding-left:18px;"frontblock4');
+        $output .= html_writer::start_div('frontblock4');
        // $output .= html_writer::div('<h6><center><br>For Further Information</h6>','a1');
         $output .= html_writer::div('<h4><center><br>Are you a student?</h4><img src="theme/bithio/pix/pages/student.png"><center>Access your classroom online and <br>make your learning fun and rewarding.<br><br>','a1');
         $output .= html_writer::end_div('frontblock4');
-        $output.='<br><br>';
+        //$output.='<br><br>';
         $output .= html_writer::end_div('frontblocksecond');
-        $output.='<br><br>';
+        $output.='<br><br><br>';
 
         //The next blocks are others.
        // $output .= html_writer::start_div('Box');
-        $output .= html_writer::start_div('p1');
+        //$output .= html_writer::start_div('p1');
         $output .= html_writer::start_div('p1_inner1');
-        $output .= html_writer::div('<h1><center><br><br>Bringing your school to the digital world,<br> and your classroom to your pocket.<br><br><br></h1>','p2');
+        $output .= html_writer::div('<h1><center><br><br>Bringing your school to the digital world,<br> and your classroom to your pocket.<br><br><br></center></h1>','p2');
         
 
-
-        //the code below is for a text on an image
-        $output .= html_writer::start_div('marketingb1');
-        $output .= html_writer::div('<br>','gap3');
-       // $output .= html_writer::div('<img src="theme/bithio/pix/pages/frontpage.png" alt="An image is lost.">','marketingb1');
-        //$output .= html_writer::div('<h3>Online Learning Center</h3><p>Learn with bithio online Learning</p>','marketingb1');
-        $output .= html_writer::end_div('marketingb1');
-        //the two lines below are the closing of the the second block from the above
         $output .= html_writer::end_div('p1_inner1');
-        $output .= html_writer::end_div('p1');
+        //$output .= html_writer::end_div('p1');
         //require_once($CFG->dirroot .'/theme/bithio/layout/on_image_text.html');
-
+       // $output .= html_writer::end_div('frontcovercontainer');
+       $output.='<br><br><br>';
 
         return $output;
     }
