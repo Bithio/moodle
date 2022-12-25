@@ -276,17 +276,11 @@ class theme_bithio_core_course_renderer extends core_course_renderer{
         $output .= html_writer::end_div('frontblocksecond');
         $output.='<br><br><br>';
 
-        //The next blocks are others.
-       // $output .= html_writer::start_div('Box');
-        //$output .= html_writer::start_div('p1');
         $output .= html_writer::start_div('p1_inner1');
         $output .= html_writer::div('<h1><center><br><br>Bringing your school to the digital world,<br> and your classroom to your pocket.<br><br><br></center></h1>','p2');
         
 
         $output .= html_writer::end_div('p1_inner1');
-        //$output .= html_writer::end_div('p1');
-        //require_once($CFG->dirroot .'/theme/bithio/layout/on_image_text.html');
-       // $output .= html_writer::end_div('frontcovercontainer');
        $output.='<br><br><br>';
 
         return $output;
