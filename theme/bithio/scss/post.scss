@@ -129,14 +129,14 @@ height: 75px;color:white;}
     margin-top: 0.5rem;
 }}
 
-/*.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
     @media(min-width: 200px){
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-  }}*/
+  }}
 //All the codes below are fore the courseboxes
 .courses.frontpage-course-list-all{
     @media (min-width: 200px){ 
@@ -221,8 +221,8 @@ flex-wrap: wrap;
     flex-flow: row wrap;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-right: -5%;
-    margin-left: -5%;
+  //  margin-right: -5%;
+    margin-left: -2%;
     }}
     @media(min-width: 200px){
         .p1_txt{
