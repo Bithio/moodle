@@ -240,6 +240,9 @@ class theme_bithio_core_course_renderer extends core_course_renderer{
        // $output .= html_writer::div('<h6><br>About Us</h6>');
         //$output .= html_writer::div('Bithio ICT Systems PLC<br><img src="theme/bithio/pix/courseimages/marketing1.png">','frontblock1');
         $output .= html_writer::div('<img src="theme/bithio/pix/pages/frontpage.png" alt="An image is lost.">','marketingb1');
+       // $output .=html_writer::div('<h1>Better Learning.<br>Better competencey.</h1>','block1-text');
+        //$output.='<br><br>';//this line makes a gap between the two text blocks.
+       // $output .=html_writer::div('<h1>Better competencey.</h1>','block1-text2');
        // $output .= html_writer::div('Addis Ababa, Ethiopia','f1');
        // $output .= html_writer::div('<a style="text-decoration: none;" href="https://elearning.bithio.com/">www.bithio.com</a>','f1');
         $output .= html_writer::end_div('frontblock1');
